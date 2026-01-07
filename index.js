@@ -175,7 +175,7 @@ function makeCommandFromTitle(title, fallbackId) {
   return cmd;
 }
 
-const PAGE_SIZE = 15;
+const PAGE_SIZE = 6;
 
 // Fungsi untuk format angka rupiah
 function formatRupiah(angka) {
@@ -530,10 +530,10 @@ async function sendMainMenu(ctx, page = 1, edit = false) {
     }
   }
 
-let text = `👋 Halo <b>${username}</b>Selamat datang di bot Pemersatu Bangsa V2`;
+let text = `👋 Halo <b>${username}</b> Selamat datang di bot Pemersatu Bangsa V2`;
   text += '<blockquote>Saya di sini bertugas untuk memberi kalian semua bahan Video yang gacor dan free ya pastinya.</blockquote>\n\n';
   text += '<b>Silakan pilih video yang ada di sini:</b>\n';
-  text += '────────────────────────\n';
+  text += '───────────────────────\n';
 
   pageItems.forEach((vid, index) => {
     const nomor = startIdx + index + 1;
